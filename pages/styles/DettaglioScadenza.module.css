@@ -1,0 +1,215 @@
+.page {
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f0ff, #f5faff);
+  padding: 40px 16px;
+  box-sizing: border-box; /* previene overflow da padding */
+  overflow-x: hidden;     /* blocca scroll orizzontale indesiderato */
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 1.5rem;
+}
+
+.container hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.uploadLabel {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.uploadLabel:hover {
+  background-color: #005bb5;
+}
+
+.uploadLabel input {
+  display: none;
+}
+
+.fileList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fileList li {
+  margin: 8px 0;
+}
+
+.fileLink {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.fileLink:hover {
+  text-decoration: underline;
+}
+
+.deleteButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.deleteButton:hover {
+  background-color: #d93636;
+}
+
+.previewButton {
+  background-color: #e0e0e0;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.previewButton:hover {
+  background-color: #005bb5;
+}
+
+.previewIframe {
+  width: 100%;
+  max-height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+/* Bottone Torna alla Dashboard */
+.backButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #005bb5;
+}
+
+/* Bottone Modifica */
+.editButton {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-bottom: 1rem;
+  margin-right: 10px;
+}
+
+.editButton:hover {
+  background-color: #e0e0e0;
+}
+
+/* Bottone Salva */
+.saveButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  margin-right: 10px;
+  transition: 0.2s ease;
+}
+
+.saveButton:hover {
+  background-color: #005bb5;
+}
+
+/* Bottone Annulla */
+.cancelButton {
+  background-color: #999;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  transition: 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: #666;
+}
+
+/* Input modifica */
+.editInput {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.selectInput {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+}

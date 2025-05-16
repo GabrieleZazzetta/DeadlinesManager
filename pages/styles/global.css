@@ -1,0 +1,5 @@
+/* tolgo i margini dall'intera pagina per lo sfondo a gradiente */
+body, html {
+    margin: 0;
+    padding: 0;
+  }

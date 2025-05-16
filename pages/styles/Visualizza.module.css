@@ -1,0 +1,187 @@
+.page {
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f0ff, #f5faff);
+  padding: 40px 16px;
+  box-sizing: border-box; /* previene overflow da padding */
+  overflow-x: hidden;     /* blocca scroll orizzontale indesiderato */
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  font-family: "Segoe UI", sans-serif;
+}  
+
+.heading {
+  font-size: clamp(2rem, 3vw, 1.8rem);
+  color: #0070f3;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.backButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #005bb5;
+  transform: scale(1.02);
+}
+
+.filtri {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.filtri input,
+.filtri select {
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filtri input:focus,
+.filtri select:focus {
+  border-color: #0070f3;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+  transform: scale(0.95); 
+  transform-origin: left center;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.iconButton:hover {
+  transform: scale(1.1);
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.dropdownMenu {
+  position: absolute;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 6px 0;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+}
+
+.dropdownMenu div {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownMenu div:hover {
+  background-color: #f0f0f0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-left: 4px solid #0070f3;
+  transition: box-shadow 0.2s ease;
+}
+
+.item:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.pinned {
+  background-color: #e6f0ff;
+}
+
+.content {
+  cursor: pointer;
+  flex: 1;
+}
+
+.content strong {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.stato {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.attiva {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.nonAttiva {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
