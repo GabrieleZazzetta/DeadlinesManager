@@ -136,11 +136,18 @@ package-lock.json
 
 ## Funzionalità
 
+Homepage:
+- Pagina di presentazione del sito.
+- Possibilità di navigare verso la pagina di Login se si è già in posseso di un account.
+- Se non si è in posseso di un account, possiblità di premere un link Registrati per effetuare la registrazione.
+
 Registrazione:
 - Registrazione utenti con nome, email, password e numero di telefono.
+- Dopo aver effetuato la registrazione, l'utente viene indirizzato direttamente alla pagina 'Dashboard'.
 
 Login:
 - Login utenti con email e password scelti in fase di registrazione.
+- Dopo il login l'utente viene indirizzato alla pagina 'Dashboard'.
 
 Dashboard:
 - Aggiunta di nuove scadenze con tipologia, descrizione, data, importo e stato della scadenza (impostato su attivo di default).
