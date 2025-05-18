@@ -127,6 +127,12 @@ Installazioni e configurazioni principali
 │   ├── ...
 ├── logo.png
 
+📁 screenshots/
+├── dashboard.png
+├── ...
+├── ...
+├── visualizza.png
+
 .env.local  
 .gitignore
 README.md  
