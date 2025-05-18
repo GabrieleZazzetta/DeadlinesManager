@@ -136,14 +136,27 @@ package-lock.json
 
 ## Funzionalità
 
+Registrazione:
 - Registrazione utenti con nome, email, password e numero di telefono.
-- Aggiunta di nuove scadenze con tipologia, descrizione, data, importo e stato (attivo di default).
+Login:
+-Login utenti con email e password scelti in fase di registrazione.
+Dashboard:
+- Aggiunta di nuove scadenze con tipologia, descrizione, data, importo e stato della scadenza (impostato su attivo di default).
 - Possibilità di aggiungere un campo 'Premio anno passato' per le scadenze di tipo polizza.
-- Visualizzazione, modifica ed eliminazione delle scadenze personali.
-- Filtri avanzati per tipo, descrizione e stato.
-- Possibilità di "pinnare", ordinare e selezionare più scadenze contemporaneamente.
-- Dettagli delle scadenze con la possibilità di caricare più file PDF e visualizzare l'anteprima.
+- Possibilità di effetuare il logout.
+- Possibilità di esportare i dati delle proprie scadenze personali in formato JSON.
+- Bottone per navigare verso la pagina 'Visualizza Scadenze'.
+Visualizza Scadenze:
+- Visualizzazione delle scadenze personali
+- Filtri avanzati per tipo, descrizione e stato (attiva/non attiva).
+- Possibilità di "pinnare", ordinare, selezionare ed eliminare le scadenze.
+- Possibilità di fare click sulla scadenza interessata per aprire la corrispondente pagina 'Visualizza Dettagli'.
+Visualizza Dettagli Scadenza:
+- Possibilità di visualizzare i dettagli delle scadenze e modificarne i campi.
+- Possibilità di fare upload di più file PDF e visualizzarne l'anteprima.
+Funzionalità di promemoria per le scadenze personali:
 - Notifiche email automatiche all'indirizzo di registrazione dell'utente tramite Sendinblue: 30, 15 e 1 giorno prima della scadenza.
+- Nel caso di una polizza, nel corpo della mail sarà presente anche una comparativa con il premio dell'anno passato, a patto che l'utente abbia inserito tale valore nella fase di aggiunta di una nuova scadenza.
 
 ## Pagine web
 
@@ -184,7 +197,7 @@ npm run dev
 ```
 
 ## Configurazione Ambiente e Sicurezza
-1. Crea un file .gitignore per escludere file sensibili quando si fa push su gitHub.
+1. Crea un file .gitignore per escludere file sensibili quando si fa push su GitHub.
 
 2. Crea un file .env.local nella root del progetto con le seguenti variabili:
     ```bash
