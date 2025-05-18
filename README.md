@@ -140,7 +140,7 @@ Registrazione:
 - Registrazione utenti con nome, email, password e numero di telefono.
 
 Login:
--Login utenti con email e password scelti in fase di registrazione.
+- Login utenti con email e password scelti in fase di registrazione.
 
 Dashboard:
 - Aggiunta di nuove scadenze con tipologia, descrizione, data, importo e stato della scadenza (impostato su attivo di default).
