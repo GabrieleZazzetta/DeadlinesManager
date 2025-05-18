@@ -147,7 +147,7 @@ Registrazione:
 
 Login:
 - Login utenti con email e password scelti in fase di registrazione.
-- Dopo il login l'utente viene indirizzato alla pagina 'Dashboard'.
+- Dopo aver effettuato il login, l'utente viene indirizzato alla pagina 'Dashboard'.
 
 Dashboard:
 - Aggiunta di nuove scadenze con tipologia, descrizione, data, importo e stato della scadenza (impostato su attivo di default).
