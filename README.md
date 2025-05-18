@@ -138,22 +138,27 @@ package-lock.json
 
 Registrazione:
 - Registrazione utenti con nome, email, password e numero di telefono.
+
 Login:
 -Login utenti con email e password scelti in fase di registrazione.
+
 Dashboard:
 - Aggiunta di nuove scadenze con tipologia, descrizione, data, importo e stato della scadenza (impostato su attivo di default).
 - Possibilità di aggiungere un campo 'Premio anno passato' per le scadenze di tipo polizza.
 - Possibilità di effetuare il logout.
 - Possibilità di esportare i dati delle proprie scadenze personali in formato JSON.
 - Bottone per navigare verso la pagina 'Visualizza Scadenze'.
+
 Visualizza Scadenze:
 - Visualizzazione delle scadenze personali
 - Filtri avanzati per tipo, descrizione e stato (attiva/non attiva).
 - Possibilità di "pinnare", ordinare, selezionare ed eliminare le scadenze.
 - Possibilità di fare click sulla scadenza interessata per aprire la corrispondente pagina 'Visualizza Dettagli'.
+
 Visualizza Dettagli Scadenza:
 - Possibilità di visualizzare i dettagli delle scadenze e modificarne i campi.
 - Possibilità di fare upload di più file PDF e visualizzarne l'anteprima.
+
 Funzionalità di promemoria per le scadenze personali:
 - Notifiche email automatiche all'indirizzo di registrazione dell'utente tramite Sendinblue: 30, 15 e 1 giorno prima della scadenza.
 - Nel caso di una polizza, nel corpo della mail sarà presente anche una comparativa con il premio dell'anno passato, a patto che l'utente abbia inserito tale valore nella fase di aggiunta di una nuova scadenza.
